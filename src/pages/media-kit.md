@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: layouts/page.njk
 title: Media Kit
 permalink: "/media-kit/index.html"
 description: Official DOVE Token brand assets, logos, media resources, and press materials for partners and press.
@@ -8,10 +8,10 @@ meta:
   url: https://dovechain.org/media-kit/
 ---
 
-<div class="container mx-auto px-4 py-16 max-w-7xl">
+<div class="max-w-4xl mx-auto">
   <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">DOVE Token Media Kit</h1>
   
-  <div class="bg-gray-900 rounded-lg p-8 mb-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 mb-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">Press Contacts</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="border border-gray-700 rounded-lg p-4">
@@ -27,7 +27,7 @@ meta:
     </div>
   </div>
 
-  <div class="bg-gray-900 rounded-lg p-8 mb-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 mb-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">DOVE Brand Assets</h2>
     
     <div class="mb-8">
@@ -94,7 +94,7 @@ meta:
     </div>
   </div>
 
-  <div class="bg-gray-900 rounded-lg p-8 mb-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 mb-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">Press Materials</h2>
     <div class="space-y-4 mb-6">
       <div class="border border-gray-700 rounded-lg p-4 flex justify-between items-center">
@@ -121,7 +121,7 @@ meta:
     </div>
   </div>
 
-  <div class="bg-gray-900 rounded-lg p-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">Brand Guidelines</h2>
     <p class="mb-6">Please review our complete brand guidelines before using DOVE assets in your materials:</p>
     <div class="text-center">

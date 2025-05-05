@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: layouts/page.njk
 title: How to Buy
 permalink: "/how-to-buy/index.html"
 description: Step-by-step guide to purchasing DOVE Token on Base Layer 2, including wallet setup and exchange instructions.
@@ -8,10 +8,10 @@ meta:
   url: https://dovechain.org/how-to-buy/
 ---
 
-<div class="container mx-auto px-4 py-16 max-w-7xl">
+<div class="max-w-4xl mx-auto">
   <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">How to Buy DOVE Token</h1>
   
-  <div class="bg-gray-900 rounded-lg p-8 mb-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 mb-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">Step 1: Set Up a Compatible Wallet</h2>
     <p class="mb-4">To interact with the Base Layer 2 network, you'll need a compatible Ethereum wallet:</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
@@ -33,7 +33,7 @@ meta:
     </div>
   </div>
 
-  <div class="bg-gray-900 rounded-lg p-8 mb-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 mb-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">Step 2: Connect to Base Network</h2>
     <p class="mb-4">Add the Base network to your wallet:</p>
     <div class="bg-gray-800 p-4 rounded mb-4">
@@ -46,17 +46,17 @@ meta:
     <p>Most wallets offer one-click setup for Base. In MetaMask, go to Settings → Networks → Add Network → Base.</p>
   </div>
 
-  <div class="bg-gray-900 rounded-lg p-8 mb-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 mb-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">Step 3: Get ETH on Base</h2>
     <p class="mb-4">You'll need ETH on Base to pay for transaction fees. You can get it by:</p>
     <ul class="list-disc pl-6 space-y-2 mb-4">
       <li>Using Coinbase: Direct on-ramp to Base</li>
-      <li>Using a bridge: Bridge from Ethereum Mainnet using the <a href="https://bridge.base.org" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Base Bridge</a></li>
+      <li>Using a bridge: Bridge from Ethereum Mainnet using the <a href="https://bridge.base.org" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300">Base Bridge</a></li>
       <li>Using an exchange that supports direct Base withdrawals</li>
     </ul>
   </div>
 
-  <div class="bg-gray-900 rounded-lg p-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">Step 4: Buy DOVE</h2>
     <p class="mb-4">Now you're ready to buy DOVE token:</p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">

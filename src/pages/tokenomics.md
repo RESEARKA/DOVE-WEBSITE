@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: layouts/page.njk
 title: Tokenomics
 permalink: "/tokenomics/index.html"
 description: DOVE Token economics, supply, distribution, and charitable giving mechanisms.
@@ -8,10 +8,10 @@ meta:
   url: https://dovechain.org/tokenomics/
 ---
 
-<div class="container mx-auto px-4 py-16 max-w-7xl">
+<div class="max-w-4xl mx-auto">
   <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">DOVE Token Economics</h1>
   
-  <div class="bg-gray-900 rounded-lg p-8 mb-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 mb-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">Token Distribution</h2>
     <ul class="list-disc pl-6 space-y-2">
       <li>Total Supply: 1,000,000,000 DOVE</li>
@@ -23,7 +23,7 @@ meta:
     </ul>
   </div>
 
-  <div class="bg-gray-900 rounded-lg p-8 mb-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 mb-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">Charitable Mechanism</h2>
     <p class="mb-4">Every DOVE transaction contributes to global charitable causes:</p>
     <ul class="list-disc pl-6 space-y-2">
@@ -34,7 +34,7 @@ meta:
     </ul>
   </div>
 
-  <div class="bg-gray-900 rounded-lg p-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">Tokenomics Benefits</h2>
     <ul class="list-disc pl-6 space-y-2">
       <li>Sustainable giving model that grows with transaction volume</li>

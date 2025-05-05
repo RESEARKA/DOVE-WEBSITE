@@ -12,6 +12,11 @@ module.exports = function(eleventyConfig) {
   // Copy security headers file
   eleventyConfig.addPassthroughCopy("_headers");
 
+  // Add layout aliases for easier referencing - these must be paths relative to the _includes directory
+  eleventyConfig.addLayoutAlias('home', 'layouts/home.njk');
+  eleventyConfig.addLayoutAlias('page', 'layouts/page.njk');
+  eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
+
   // Add a shortcode for current year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   
@@ -69,7 +74,6 @@ module.exports = function(eleventyConfig) {
       input: "src",
       output: "_site",
       includes: "_includes",
-      layouts: "_includes/layouts",
       data: "_data"
     },
     templateFormats: ["md", "njk", "html"],

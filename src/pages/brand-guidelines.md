@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: layouts/page.njk
 title: Brand Guidelines
 permalink: "/brand-guidelines/index.html"
 description: Official DOVE Token brand guidelines including logo usage, color palette, typography, and communication style.
@@ -8,10 +8,10 @@ meta:
   url: https://dovechain.org/brand-guidelines/
 ---
 
-<div class="container mx-auto px-4 py-16 max-w-7xl">
+<div class="max-w-4xl mx-auto">
   <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">DOVE Brand Guidelines</h1>
   
-  <div class="bg-gray-900 rounded-lg p-8 mb-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 mb-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">Logo Usage</h2>
     
     <div class="mb-6">
@@ -51,7 +51,7 @@ meta:
     </div>
   </div>
 
-  <div class="bg-gray-900 rounded-lg p-8 mb-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 mb-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">Color Palette</h2>
     
     <div class="mb-6">
@@ -70,7 +70,7 @@ meta:
           <p class="text-sm text-gray-400">RGB: 255, 255, 255</p>
         </div>
         <div class="text-center">
-          <div class="w-full h-24 bg-gray-900 rounded-lg mb-2 border border-gray-700"></div>
+          <div class="w-full h-24 bg-gray-100 rounded-lg mb-2 border border-gray-200"></div>
           <p class="font-medium">Midnight</p>
           <p class="text-sm text-gray-400">#111827</p>
           <p class="text-sm text-gray-400">RGB: 17, 24, 39</p>
@@ -111,7 +111,7 @@ meta:
     </div>
   </div>
 
-  <div class="bg-gray-900 rounded-lg p-8 mb-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 mb-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">Typography</h2>
     
     <div class="mb-6">
@@ -137,7 +137,7 @@ meta:
     </div>
   </div>
 
-  <div class="bg-gray-900 rounded-lg p-8 shadow-lg">
+  <div class="bg-white rounded-lg p-8 shadow-lg border border-gray-100">
     <h2 class="text-2xl font-semibold mb-4">Tone of Voice</h2>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">

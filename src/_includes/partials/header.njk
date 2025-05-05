@@ -3,17 +3,17 @@
   <div class="container mx-auto px-4 py-3">
     <nav class="flex justify-between items-center">
       <div class="flex items-center space-x-2">
-        <a href="/" class="font-bold text-2xl text-blue-600">DOVE</a>
+        <a href="{{ '/' | url }}" class="font-bold text-2xl text-blue-600">DOVE</a>
         <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded-full font-semibold">Base L2</span>
       </div>
       
       <!-- Desktop menu -->
       <div class="hidden md:flex space-x-8">
-        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors" href="/">Home</a>
-        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors" href="/tokenomics/">Tokenomics</a>
-        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors" href="/charity-impact/">Charity Impact</a>
-        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors" href="/how-to-buy/">How to Buy</a>
-        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors" href="/docs/">Documentation</a>
+        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors {% if page.url == '/' %}text-blue-600{% endif %}" href="{{ '/' | url }}">Home</a>
+        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors {% if page.url == '/tokenomics/' %}text-blue-600{% endif %}" href="{{ '/tokenomics/' | url }}">Tokenomics</a>
+        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors {% if page.url == '/charity-impact/' %}text-blue-600{% endif %}" href="{{ '/charity-impact/' | url }}">Charity Impact</a>
+        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors {% if page.url == '/how-to-buy/' %}text-blue-600{% endif %}" href="{{ '/how-to-buy/' | url }}">How to Buy</a>
+        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors {% if page.url == '/docs/' %}text-blue-600{% endif %}" href="{{ '/docs/' | url }}">Documentation</a>
       </div>
       
       <!-- Mobile menu button -->
@@ -31,11 +31,11 @@
          x-transition:enter-end="opacity-100 translate-y-0" 
          class="md:hidden pt-4 pb-2 space-y-3" 
          style="display: none;">
-        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors" href="/">Home</a>
-        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors" href="/tokenomics/">Tokenomics</a>
-        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors" href="/charity-impact/">Charity Impact</a>
-        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors" href="/how-to-buy/">How to Buy</a>
-        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors" href="/docs/">Documentation</a>
+        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors {% if page.url == '/' %}text-blue-600 bg-blue-50{% endif %}" href="{{ '/' | url }}">Home</a>
+        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors {% if page.url == '/tokenomics/' %}text-blue-600 bg-blue-50{% endif %}" href="{{ '/tokenomics/' | url }}">Tokenomics</a>
+        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors {% if page.url == '/charity-impact/' %}text-blue-600 bg-blue-50{% endif %}" href="{{ '/charity-impact/' | url }}">Charity Impact</a>
+        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors {% if page.url == '/how-to-buy/' %}text-blue-600 bg-blue-50{% endif %}" href="{{ '/how-to-buy/' | url }}">How to Buy</a>
+        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors {% if page.url == '/docs/' %}text-blue-600 bg-blue-50{% endif %}" href="{{ '/docs/' | url }}">Documentation</a>
     </div>
   </div>
 </header>
