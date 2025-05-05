@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} | {% endif %}DOVE Token - Charitable Crypto on Base L2</title>
+  <meta name="description" content="{{ description | default('0.5% of every transaction is automatically donated to charity. Learn more about DOVE Token.') }}">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  
+  <!-- Preload critical assets -->
+  <link rel="preload" href="{{ '/assets/css/styles.css' | url }}" as="style">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" as="script">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
+  
+  <!-- Alpine.js (minimal JS framework) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"></script>
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="{% if title %}{{ title }} | {% endif %}DOVE Token">
+  <meta property="og:description" content="{{ description | default('0.5% of every transaction is automatically donated to charity. Learn more about DOVE Token.') }}">
+  <meta property="og:image" content="{{ meta.image | default('/assets/images/og-image.jpg') }}">
+  <meta property="og:url" content="{{ meta.url | default('https://dovechain.org/') }}">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  
+  <!-- Any additional head content -->
+  {% block head %}{% endblock %}
+</head>
+<body class="bg-white text-dove-gray-800 antialiased">
+  <!-- Skip to content link for accessibility -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-dove-blue-600 focus:text-white focus:z-50">
+    Skip to content
+  </a>
+
+  <!-- Header -->
+  {% include "../partials/header.njk" %}
+  
+  <!-- Main content -->
+  {% block content %}
+    {{ content | safe }}
+  {% endblock %}
+  
+  <!-- Footer -->
+  {% include "../partials/footer.njk" %}
+  
+  <!-- Any additional body scripts -->
+  {% block scripts %}{% endblock %}
+</body>
+</html>

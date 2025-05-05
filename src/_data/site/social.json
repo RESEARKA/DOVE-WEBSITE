@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Twitter",
+    "url": "https://twitter.com/dovetoken",
+    "icon": "twitter"
+  },
+  {
+    "name": "Discord",
+    "url": "https://discord.gg/dovetoken",
+    "icon": "discord"
+  },
+  {
+    "name": "Telegram",
+    "url": "https://t.me/dovetoken",
+    "icon": "telegram"
+  },
+  {
+    "name": "GitHub",
+    "url": "https://github.com/dovetoken",
+    "icon": "github"
+  },
+  {
+    "name": "Medium",
+    "url": "https://medium.com/@dovetoken",
+    "icon": "medium"
+  }
+]

@@ -1,0 +1,15 @@
+{# Stats Section Component #}
+{% macro stats(statsData) %}
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        {% for stat in statsData %}
+          <div>
+            <p class="text-4xl font-bold text-dove-blue-600 mb-2">{{ stat.value }}</p>
+            <p class="text-dove-gray-600">{{ stat.label }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endmacro %}

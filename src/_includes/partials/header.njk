@@ -1,0 +1,41 @@
+<!-- Header component with mobile responsive menu -->
+<header class="sticky top-0 z-50 bg-white shadow-sm" x-data="{ mobileMenuOpen: false }">
+  <div class="container mx-auto px-4 py-3">
+    <nav class="flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <a href="/" class="font-bold text-2xl text-blue-600">DOVE</a>
+        <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded-full font-semibold">Base L2</span>
+      </div>
+      
+      <!-- Desktop menu -->
+      <div class="hidden md:flex space-x-8">
+        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors" href="/">Home</a>
+        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors" href="/tokenomics/">Tokenomics</a>
+        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors" href="/charity-impact/">Charity Impact</a>
+        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors" href="/how-to-buy/">How to Buy</a>
+        <a class="font-medium text-gray-700 hover:text-blue-600 transition-colors" href="/docs/">Documentation</a>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden p-2 rounded-md focus:outline-none" aria-label="Toggle mobile menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+    
+    <!-- Mobile menu dropdown -->
+    <div x-show="mobileMenuOpen" 
+         x-transition:enter="transition ease-out duration-200" 
+         x-transition:enter-start="opacity-0 -translate-y-4" 
+         x-transition:enter-end="opacity-100 translate-y-0" 
+         class="md:hidden pt-4 pb-2 space-y-3" 
+         style="display: none;">
+        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors" href="/">Home</a>
+        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors" href="/tokenomics/">Tokenomics</a>
+        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors" href="/charity-impact/">Charity Impact</a>
+        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors" href="/how-to-buy/">How to Buy</a>
+        <a class="block py-2 px-4 font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors" href="/docs/">Documentation</a>
+    </div>
+  </div>
+</header>

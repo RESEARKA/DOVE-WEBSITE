@@ -1,0 +1,60 @@
+{
+  "main": [
+    {
+      "text": "Home",
+      "url": "/"
+    },
+    {
+      "text": "Tokenomics",
+      "url": "/tokenomics/"
+    },
+    {
+      "text": "Charity Impact",
+      "url": "/charity-impact/"
+    },
+    {
+      "text": "How to Buy",
+      "url": "/how-to-buy/"
+    },
+    {
+      "text": "Documentation",
+      "url": "/docs/"
+    }
+  ],
+  "resources": [
+    {
+      "text": "Token Contract",
+      "url": "https://basescan.org/token/0x1234...5678"
+    },
+    {
+      "text": "BaseScan",
+      "url": "https://basescan.org/"
+    },
+    {
+      "text": "GitHub",
+      "url": "https://github.com/dovechain"
+    },
+    {
+      "text": "Media Kit",
+      "url": "/media-kit/"
+    },
+    {
+      "text": "Brand Guidelines",
+      "url": "/brand-guidelines/"
+    }
+  ],
+  "legal": [
+    {
+      "text": "Terms of Service",
+      "url": "/legal/terms/"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "/legal/privacy/"
+    },
+    {
+      "text": "Disclosures",
+      "url": "/disclosures/"
+    }
+  ]
+}

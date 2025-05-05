@@ -1,0 +1,34 @@
+{
+  "name": "dove-website",
+  "version": "1.0.0",
+  "description": "DOVE Token - Charitable Crypto on Base L2",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run css && eleventy --serve",
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:eleventy": "eleventy --serve",
+    "dev:css": "tailwindcss -i ./src/assets/css/tailwind.css -o ./_site/assets/css/styles.css --watch",
+    "build": "npm run css && eleventy",
+    "css": "tailwindcss -i ./src/assets/css/tailwind.css -o ./_site/assets/css/styles.css --minify",
+    "test": "echo \"No tests specified yet\""
+  },
+  "keywords": [
+    "crypto",
+    "charity",
+    "token",
+    "base-l2",
+    "dove"
+  ],
+  "author": "DOVE Team",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "alpinejs": "^3.13.3",
+    "autoprefixer": "^10.4.16",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
+  }
+}

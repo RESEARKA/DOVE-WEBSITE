@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Charitable Donations",
+    "description": "0.5% of every transaction is automatically donated to verified charity partners, creating continuous charitable impact.",
+    "iconName": "charity"
+  },
+  {
+    "title": "Community Governance",
+    "description": "Token holders vote on which charities receive funds, ensuring democratic control of donation allocation.",
+    "iconName": "governance"
+  },
+  {
+    "title": "Transparent Protocol",
+    "description": "All transactions and donations are fully visible on the blockchain for complete transparency.",
+    "iconName": "security"
+  },
+  {
+    "title": "Reflective Rewards",
+    "description": "Earn passive income through our reflection mechanism that rewards long-term token holders.",
+    "iconName": "rewards"
+  },
+  {
+    "title": "Multi-Chain Support",
+    "description": "Available on multiple blockchains for lower fees and wider accessibility.",
+    "iconName": "token"
+  },
+  {
+    "title": "Active Community",
+    "description": "Join a passionate community focused on combining DeFi innovation with real-world impact.",
+    "iconName": "community"
+  }
+]

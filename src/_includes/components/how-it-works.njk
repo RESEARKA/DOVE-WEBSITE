@@ -1,0 +1,25 @@
+{# How It Works Section Component #}
+{% macro howItWorks(stepsData) %}
+  <section class="py-16 md:py-24 bg-dove-blue-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-dove-gray-900 mb-6">How DOVE Works</h2>
+        <p class="text-xl text-dove-gray-600">
+          A simple, transparent process that connects cryptocurrency transactions to real-world social impact.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        {% for step in stepsData %}
+          <div class="bg-white rounded-xl p-8 shadow-sm">
+            <div class="w-16 h-16 flex items-center justify-center bg-dove-blue-100 text-dove-blue-600 rounded-full mx-auto mb-6">
+              <p class="text-2xl font-bold">{{ step.number }}</p>
+            </div>
+            <h3 class="text-xl font-bold text-dove-gray-900 mb-3">{{ step.title }}</h3>
+            <p class="text-dove-gray-600">{{ step.description }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endmacro %}

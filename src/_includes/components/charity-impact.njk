@@ -1,0 +1,30 @@
+{# Charity Impact Section Component #}
+{% macro charityImpact() %}
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dove-gray-900 mb-6">Measurable Charity Impact</h2>
+          <p class="text-lg text-dove-gray-600 mb-6 leading-relaxed">
+            Every transaction contributes to meaningful change. Our transparent donation system ensures funds reach verified charitable organizations working on environmental conservation and humanitarian aid.
+          </p>
+          <p class="text-lg text-dove-gray-600 mb-8 leading-relaxed">
+            Token holders vote on which charities receive donations, creating a democratic system that reflects community values.
+          </p>
+          <a href="/charity-impact/" class="button-primary">
+            View Impact Reports
+          </a>
+        </div>
+        <div class="md:w-1/2">
+          <img 
+            src="/assets/images/charity-impact-chart.svg" 
+            alt="DOVE Charity Impact Analytics" 
+            class="w-full h-auto rounded-xl shadow-lg"
+            width="600" 
+            height="400"
+            loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+{% endmacro %}

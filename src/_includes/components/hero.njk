@@ -1,0 +1,37 @@
+{# Hero Section Component #}
+{% macro hero() %}
+  <section class="hero-gradient py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+          <h1 class="text-4xl md:text-5xl font-display font-bold text-dove-gray-900 leading-tight mb-6">
+            Charitable Giving Through<br>
+            <span class="text-dove-blue-600">Decentralized Finance</span>
+          </h1>
+          <p class="text-xl text-dove-gray-600 mb-8 leading-relaxed">
+            DOVE Token combines cryptocurrency innovation with social impact. 0.5% of every transaction is automatically donated to charity through our decentralized protocol.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="/how-to-buy/" class="button-primary">
+              Buy DOVE
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="/docs/" class="button-secondary" rel="noopener">
+              Read Documentation
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <img 
+            src="/assets/images/dove-hero-illustration.svg" 
+            alt="DOVE Token Charitable Ecosystem" 
+            class="w-full h-auto"
+            width="600" 
+            height="400">
+        </div>
+      </div>
+    </div>
+  </section>
+{% endmacro %}

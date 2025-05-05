@@ -1,0 +1,36 @@
+{# Features Section Component #}
+
+{# Import sanitizer utilities #}
+{% from "utils/sanitizer.njk" import sanitizeSvg %}
+
+{# Feature card macro #}
+{% macro featureCard(feature) %}
+  <div class="feature-card bg-white rounded-xl p-8 shadow-sm transition-transform hover:transform hover:scale-105">
+    <div class="mb-6 text-dove-blue-600" aria-label="{{ feature.title }} icon">
+      {# Use our secure SVG rendering with proper sanitization #}
+      {{ sanitizeSvg(feature.icon) }}
+    </div>
+    <h3 class="text-xl font-bold text-dove-gray-900 mb-3">{{ feature.title }}</h3>
+    <p class="text-dove-gray-600">{{ feature.description }}</p>
+  </div>
+{% endmacro %}
+
+{# Main feature section #}
+{% macro features(featuresData) %}
+  <section class="py-16 md:py-24 bg-dove-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-dove-gray-900 mb-6">Key Features</h2>
+        <p class="text-xl text-dove-gray-600">
+          DOVE Token combines innovative tokenomics with social responsibility to create a sustainable ecosystem that benefits both holders and charitable causes.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {% for feature in featuresData %}
+          {{ featureCard(feature) }}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endmacro %}

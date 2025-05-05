@@ -1,0 +1,63 @@
+<!-- Modern footer with multiple sections -->
+<footer class="bg-dove-gray-900 text-gray-300 pt-16 pb-8">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      <div>
+        <h2 class="font-bold text-white text-xl mb-6">DOVE Token</h2>
+        <p class="opacity-75 leading-relaxed">Combining charitable giving with sustainable tokenomics on Base L2.</p>
+        <div class="flex mt-6 space-x-4">
+          {% for item in social %}
+          <a href="{{ item.url }}" aria-label="{{ item.name }}" class="w-10 h-10 rounded-full bg-dove-gray-800 flex items-center justify-center hover:bg-dove-blue-600 transition-colors">
+            {{ item.icon | safe }}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      
+      <div>
+        <h2 class="font-bold text-white text-xl mb-6">Quick Links</h2>
+        <ul class="space-y-3">
+          {% for item in navigation.main %}
+          <li><a href="{{ item.url }}" class="hover:text-dove-blue-400 transition-colors">{{ item.text }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      
+      <div>
+        <h2 class="font-bold text-white text-xl mb-6">Resources</h2>
+        <ul class="space-y-3">
+          {% for item in navigation.resources %}
+          <li><a href="{{ item.url }}" class="hover:text-dove-blue-400 transition-colors">{{ item.text }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      
+      <div>
+        <h2 class="font-bold text-white text-xl mb-6">Subscribe</h2>
+        <p class="opacity-75 mb-4">Get the latest updates and announcements</p>
+        <form class="flex" action="{{ site.newsletter_signup }}" method="post">
+          <input type="email" placeholder="Your email" class="flex-1 px-4 py-3 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-dove-blue-500 text-dove-gray-900" required />
+          <button type="submit" class="bg-dove-blue-600 hover:bg-dove-blue-500 text-white px-4 py-3 rounded-r-lg transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-1.293-1.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="border-t border-dove-gray-800 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-sm opacity-75 mb-4 md:mb-0">
+          &copy; {% year %} DoveChain Labs LLC. All rights reserved.
+        </p>
+        <div class="flex items-center space-x-6 text-sm">
+          <a href="/legal/terms/" class="hover:text-dove-blue-400 transition-colors">Terms</a>
+          <a href="/legal/privacy/" class="hover:text-dove-blue-400 transition-colors">Privacy</a>
+          <a href="/disclosures/" class="hover:text-dove-blue-400 transition-colors">Disclosures</a>
+          <p class="opacity-75">Cryptocurrency involves risk</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

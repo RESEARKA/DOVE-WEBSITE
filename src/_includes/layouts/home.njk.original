@@ -1,0 +1,161 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  {# Hero Section #}
+  <section class="hero-gradient py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+          <h1 class="text-4xl md:text-5xl font-display font-bold text-dove-gray-900 leading-tight mb-6">
+            Charitable Giving Through<br>
+            <span class="text-dove-blue-600">Decentralized Finance</span>
+          </h1>
+          <p class="text-xl text-dove-gray-600 mb-8 leading-relaxed">
+            DOVE Token combines cryptocurrency innovation with social impact. 0.5% of every transaction is automatically donated to charity through our decentralized protocol.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="/how-to-buy/" class="button-primary">
+              Buy DOVE
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="/docs/" class="button-secondary">
+              Read Documentation
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <img src="/assets/images/dove-hero-illustration.svg" alt="DOVE Token Charitable Ecosystem" class="w-full h-auto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# Stats Section #}
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <p class="text-4xl font-bold text-dove-blue-600 mb-2">$1.2M+</p>
+          <p class="text-dove-gray-600">Donated to Charity</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-dove-blue-600 mb-2">15K+</p>
+          <p class="text-dove-gray-600">Token Holders</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-dove-blue-600 mb-2">100K+</p>
+          <p class="text-dove-gray-600">Transactions</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-dove-blue-600 mb-2">8</p>
+          <p class="text-dove-gray-600">Charity Partners</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# Features Section #}
+  <section class="py-16 md:py-24 bg-dove-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-dove-gray-900 mb-6">Key Features</h2>
+        <p class="text-xl text-dove-gray-600">
+          DOVE Token combines innovative tokenomics with social responsibility to create a sustainable ecosystem that benefits both holders and charitable causes.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {% for feature in features %}
+          <div class="feature-card">
+            <div class="mb-6">
+              {{ feature.icon | safe }}
+            </div>
+            <h3 class="text-xl font-bold text-dove-gray-900 mb-3">{{ feature.title }}</h3>
+            <p class="text-dove-gray-600">{{ feature.description }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {# Charity Impact Section #}
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dove-gray-900 mb-6">Measurable Charity Impact</h2>
+          <p class="text-lg text-dove-gray-600 mb-6 leading-relaxed">
+            Every transaction contributes to meaningful change. Our transparent donation system ensures funds reach verified charitable organizations working on environmental conservation and humanitarian aid.
+          </p>
+          <p class="text-lg text-dove-gray-600 mb-8 leading-relaxed">
+            Token holders vote on which charities receive donations, creating a democratic system that reflects community values.
+          </p>
+          <a href="/charity-impact/" class="button-primary">
+            View Impact Reports
+          </a>
+        </div>
+        <div class="md:w-1/2">
+          <img src="/assets/images/charity-impact-chart.svg" alt="DOVE Charity Impact Analytics" class="w-full h-auto rounded-xl shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# How It Works Section #}
+  <section class="py-16 md:py-24 bg-dove-blue-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-dove-gray-900 mb-6">How DOVE Works</h2>
+        <p class="text-xl text-dove-gray-600">
+          A simple, transparent process that connects cryptocurrency transactions to real-world social impact.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white rounded-xl p-8 shadow-sm">
+          <div class="w-16 h-16 flex items-center justify-center bg-dove-blue-100 text-dove-blue-600 rounded-full mx-auto mb-6">
+            <p class="text-2xl font-bold">1</p>
+          </div>
+          <h3 class="text-xl font-bold text-dove-gray-900 mb-3">Buy & Hold DOVE</h3>
+          <p class="text-dove-gray-600">Purchase DOVE tokens on supported decentralized exchanges and store them in your wallet.</p>
+        </div>
+        
+        <div class="bg-white rounded-xl p-8 shadow-sm">
+          <div class="w-16 h-16 flex items-center justify-center bg-dove-blue-100 text-dove-blue-600 rounded-full mx-auto mb-6">
+            <p class="text-2xl font-bold">2</p>
+          </div>
+          <h3 class="text-xl font-bold text-dove-gray-900 mb-3">Automatic Donations</h3>
+          <p class="text-dove-gray-600">0.5% of every transaction is automatically set aside for charitable donations through our smart contract.</p>
+        </div>
+        
+        <div class="bg-white rounded-xl p-8 shadow-sm">
+          <div class="w-16 h-16 flex items-center justify-center bg-dove-blue-100 text-dove-blue-600 rounded-full mx-auto mb-6">
+            <p class="text-2xl font-bold">3</p>
+          </div>
+          <h3 class="text-xl font-bold text-dove-gray-900 mb-3">Governance & Impact</h3>
+          <p class="text-dove-gray-600">Vote on charity recipients and track the impact of donations through our transparent reporting system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# CTA Section #}
+  <section class="py-16 md:py-24 bg-dove-blue-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Join the DOVE Community</h2>
+      <p class="text-xl opacity-90 max-w-3xl mx-auto mb-10">
+        Be part of a movement that's changing how cryptocurrency can create positive global impact. Join our community today.
+      </p>
+      <div class="flex flex-wrap justify-center gap-6">
+        {% for item in social | limit(4) %}
+        <a href="{{ item.url }}" class="flex items-center bg-white/10 hover:bg-white/20 transition-colors rounded-lg px-6 py-4">
+          <span class="mr-3">{{ item.icon | safe }}</span>
+          <span class="font-medium">{{ item.name }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock %}
